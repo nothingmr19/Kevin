@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="asset/images/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nicescroll.css" />
+    <script src="js/app.js"></script>
+    <script src="font/font.js"></script>
+  </head>
+  <body>
+    <!--header---start-->
+
+    <div id="header">
+      <div class="hero">
+        <nav class="header">
+          <a href="index.html"
+            ><h1><span>K</span>evin.</h1></a
+          >
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="download.html">Download</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>
+            Hi, I'm <span>Kevin</span> <br />
+            Jen from Bangladesh
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!--header---end-->
+
+    <!--about---start-->
+
+    <div id="about">
+      <div class="hero">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="asset/images/user.png" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatu
+              magni blanditiis commodi soluta itaque repudiandae non alias unde.
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>Web Devlopment</span><br />Web App Devlopment</li>
+                <li>
+                  <span>App Devlopment</span><br />Building Andorind/iOS App
+                </li>
+              </ul>
+            </div>
+
+            <!--content------>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 - Current</span><br />UI/UX Design Training at ET
+                  Institute
+                </li>
+                <li><span>2020 - 2022</span><br />Team Lead at StarApp LLC.</li>
+                <li>
+                  <span>2018 - 2020</span><br />UI/UX Design Executive ta coin
+                  Digital Ltd.
+                </li>
+              </ul>
+            </div>
+
+            <!--content------>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2017</span><br />UI/UX Design Training at ET Institute
+                </li>
+                <li><span>2017</span><br />MBA From Dhaka Institute</li>
+                <li><span>2017</span><br />BBA From Dhaka Institute</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----service--sectinon----start---->
+    <div id="services">
+      <div class="hero">
+        <h1 class="sub-title my-serve">My Services</h1>
+        <div class="services-list">
+          <!--web-design-->
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.Sed nulla
+              nibh,tincidunt sit amet sapion quis.
+            </p>
+            <a href="#">Learn more &rarr;</a>
+          </div>
+
+          <!--UI/UX-->
+
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.Sed nulla
+              nibh,tincidunt sit amet sapion quis.
+            </p>
+            <a href="#">Learn more &rarr;</a>
+          </div>
+
+          <!--app-->
+
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.Sed nulla
+              nibh,tincidunt sit amet sapion quis.
+            </p>
+            <a href="#">Learn more &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----service--sectinon----end---->
+
+    <!------portfolio----start----->
+    <div id="portfolio">
+      <div class="hero">
+        <h1 class="sub-title my-serve">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="asset/images/work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the talented people around the
+                world.Download it from play store
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <!--work-02-->
+          <div class="work">
+            <img src="asset/images/work-2.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to the talented people around the
+                world.Download it from play store
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <!--work-03-->
+
+          <div class="work">
+            <img src="asset/images/work-3.png" />
+            <div class="layer">
+              <h3>Online Sopping App</h3>
+              <p>
+                The app connects you to the talented people around the
+                world.Download it from play store
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!------portfolio----end----->
+
+    <!------contact----start----->
+    <div id="contact">
+      <div class="hero">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title sm">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>kevin@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>01722592165</p>
+            <div class="social-icon">
+              <a href="http://facebook.com" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/" target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+            <a href="asset/images/My-cv.pdf" download="CV.PDF" class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form netlify>
+              <input
+                type="text"
+                name="name "
+                data-validate="Your name is required"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="meassage"
+                id=""
+                rows="6"
+                placeholder="Your Meassage"
+                required
+              ></textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; Kevin. Made with by Vensenk</p>
+      </div>
+    </div>
+    <!------contact----end----->
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

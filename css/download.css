@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080808;
+  color: #fff;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: #ff004f;
+  border: 0;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #cd114c;
+}
+
+#header {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  padding: 10px 10%;
+  align-items: center;
+}
+
+nav .fas {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 110px;
+  cursor: pointer;
+}
+
+nav span {
+  color: #ff004f;
+  font-size: 34px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav h1 {
+  font-weight: 800;
+  font-size: 33px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  font-size: 25px;
+  margin-top: 20%;
+}
+
+.header-text h1 {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.header-text span {
+  color: #ff004f;
+}
+
+/*-----about----start--------
+----------About----------
+************************/
+
+#about {
+  padding: 80px 0;
+  color: #ababab;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+
+.sub-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tab-title {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.download-demo {
+  overflow: hidden;
+  width: 100%;
+  padding: 50px 0 65px;
+  position: relative;
+}
+
+.demo {
+  position: absolute;
+  left: 14rem;
+  top: 11rem;
+  bottom: 0;
+  right: auto;
+  max-width: 250px;
+}
+
+.app-heading {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  font-weight: 500;
+  position: absolute;
+  right: 295px;
+  top: 200px;
+  z-index: 1;
+}
+
+.app-heading-2 {
+  line-height: 1.3em;
+  font-weight: 400;
+  position: absolute;
+  right: 238px;
+  top: 240px;
+  z-index: 1;
+  font-size: 20px;
+}
+
+/********************
+footer {
+  margin-top: 12rem !important;
+}
+
+**********************/
+
+/*********************
+********************
+********************/
+
+#main-wrapper {
+  margin-bottom: 70px;
+  min-height: calc(100vh - 326px);
+}
+
+.appdownload {
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.appdownload .apd-container {
+  max-width: 1000px;
+  margin: 0px auto;
+  min-height: 400px;
+  position: relative;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 0 50px 50px rgb(0 0 0 / 5%);
+  background: #45474c url(../asset/images/app-bg.jpg) top center repeat-x;
+}
+
+.apdc-content {
+  padding: 80px 100px;
+  padding-left: 400px;
+  position: relative;
+  color: #fff !important;
+}
+
+.apdc-content .app-demo {
+  position: absolute;
+  left: 80px;
+  top: 60px;
+  bottom: 0;
+  right: auto;
+  width: 250px;
+}
+
+.app-screen {
+  width: 100%;
+  padding-bottom: 144.23%;
+  position: relative;
+}
+
+.app-screen img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: -25px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.app-heading {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  font-weight: 500;
+  position: absolute;
+  right: 219px;
+  top: 40px;
+  z-index: 1;
+}
+
+.apdc-content .app-heading {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.apdc-content .app-heading-sub {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.apdc-content .app-desc {
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.apdc-content .app-desc ul {
+  padding-left: 15px;
+}
+
+.app-desc-item {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+/*******************
+css for small screen
+*******************/
+@media only screen and (max-width: 600px) {
+  nav .fas {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  footer {
+    font-size: 14px !important;
+  }
+
+  .footer-20192 h3 {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .appdownload {
+    padding: 0 !important;
+    margin-top: 30px !important;
+  }
+  .apdc-content {
+    padding: 20px !important;
+  }
+
+  .apdc-content .app-demo {
+    position: relative !important;
+    width: 250px !important;
+    left: auto !important;
+    top: auto !important;
+    margin: 25px auto 20px !important;
+  }
+
+  .apdc-content .app-heading {
+    margin-top: 22rem;
+    font-size: 1rem !important;
+    margin-right: -5px;
+  }
+
+  .btn {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 15px 100px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .appdownload {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+
+  .apdc-content .app-heading-sub {
+    font-size: 1.1em;
+    line-height: 1.3em;
+  }
+
+  .apdc-content .app-heading {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+
+  .apdc-content {
+    padding: 40px;
+    padding-left: 250px;
+  }
+
+  .appdownload .apd-container {
+    min-height: auto;
+  }
+  .apdc-content .app-demo {
+    left: 30px;
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  nav .fas {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .appdownload {
+    padding: 20px;
+  }
+
+  .appdownload .apd-container {
+    min-height: 510px;
+  }
+
+  .apdc-content {
+    padding: 60px;
+    padding-left: 380px;
+  }
+
+  .apdc-content .app-demo {
+    left: 50px;
+    width: 270px;
+  }
+}
